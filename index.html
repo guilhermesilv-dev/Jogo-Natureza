@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Natureza - Brusque</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="tela-inicial" class="tela">
+        <h1> Missão Natureza: Amigos da Mata! </h1>
+        <p>Olá, amiguinho! Digite seu nome para começar nossa aventura em Brusque:</p>
+        
+        <input type="text" id="nome-crianca" placeholder="Seu nome lindo aqui">
+        <br><br>
+        <button id="btn-comecar" onclick="iniciarJogo()">JOGAR!</button>
+    </div>
+
+    <div id="tela-jogo" class="tela">
+        <h2 id="fase-texto">Fase Atual</h2>
+        <p id="pergunta-texto">pergunta do jogo</p>
+        <br><br>
+        <p id="mensagem-erro"></p>
+        <p id="mensagem-acerto"></p>
+
+        <div id="opcoes-container"></div>
+    </div>
+
+    <div id="tela-final" class="tela">
+        <h2> Parabéns, você conseguiu! </h2>
+        <p id="mensagem-final">Obrigado por ajudar os animais de Brusque!</p>
+        <button id="btn-reiniciar" onclick="reiniciarJogo()">Jogar de Novo 🔄</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
